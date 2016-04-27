@@ -36,7 +36,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 		<set-payload value="#['Hello Maven']" doc:name="Set Payload" />
 	</flow>
 
-	<flow name="retriveFlights">
+	<flow name="retrieveFlights">
 		<http:listener config-ref="httpListener_8081" path="/flights" allowedMethods="GET"
 			doc:name="HTTP" />
 		<db:select config-ref="Derby_Configuration" doc:name="Database">
